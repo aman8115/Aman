@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the text on button click </title>
+    <!-- css link-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- HTML CODE -->
+    <div class="container">
+        <button onclick="textChange()" id="toogal"> click on to chane the text </button>
+        <p id="box"></p>
+    </div>
+    <!-- JAVA SCRIPT CODE -->
+    <script>
+function textChange (){
+     
+    
+      
+   
+    const box = document.getElementById("box")
+    let h = document.createElement("h1")
+    h.textContent = "Pw skills "
+    h.style.textDecoration= "underline"
+    h.style.color = "yellow "
+    h.style.margin = "10px "
+    box.appendChild(h)
+    let p = document.createElement("p")
+    p.textContent = "The most affordable learning platefrom Pw skills "
+    p.style.color = 'blue '
+    p.style.fontSize = "20px "
+    box.appendChild(p)
+}
+    </script>
+</body>
+</html>
